@@ -1,0 +1,40 @@
+##OpenGL GLIB
+
+Background 0 0 0
+Smooth
+Perspective 70
+LookAt 0 0 3  0 0 0  0 1 0
+
+Vertex		FinalFaceVert.vert
+Fragment	FinalFaceFrag.frag
+Program		Project6\
+                uNoiseAmp <0. 0.05. 5.>\
+                uNoiseFreq <0. 0.1 10.>\
+                uKa <0. 0.1 1.0>\
+                uKd <0. 1. 1.0>\
+                uKs <0. 1. 1.0>\
+                uShininess <1. 20 100.>\
+                uLightX <-40. 0. 40.>\
+                uLightY <-40. 0. 40.>\
+                uLightZ <-40. 20. 40.>\
+                uColor {0.8. 0.5. 0.2. 1.}\
+                uSpecularColor {1. 1. 1. 1.}\
+                uFlat <0>
+
+translate 0 -2 0
+Obj catM.obj
+
+
+//Vertex		    FinalSilhouetteVert.vert
+//Geometry     	FinalSilhouetteGeom.geom
+//Fragment		FinalSilhouetteFrag.frag
+//
+//Program		Project6	
+////translate 0 -2 0
+//ObjAdj catM.obj
+
+Vertex		    FinalSilhouette2Vert.vert
+Fragment		FinalSilhouette2Frag.frag
+Program		Project6	
+
+ObjAdj catM.obj
